@@ -1,8 +1,18 @@
 
 import style from "./main.css";
+import $ from 'jquery';
 
-console.log("I'n a silly entry point");
 
-const arr = [1, 2, 3];
-const iAmJavascriptES6 = () => console.log(...arr);
-window.iAmJavascriptES6 = iAmJavascriptES6;
+
+
+
+
+  $(".js-scroll-to").click(function(e) {
+    let destination = $(this).attr('href');
+    e.preventDefault();
+
+    // Animate scroll to destination
+    $('html, body').animate({
+      scrollTop: $(destination).offset().top
+    }, 1000);
+  });
