@@ -8,7 +8,7 @@
 </head>
 <body>
   <div id="fullpage">
-    <header class="section" data-anchor="home" data-anchor="page1">
+    <header class="section" data-anchor="home">
       <div class="container header-wrap">
         <div class="header-row">
           <div class="header-logo">
@@ -16,10 +16,10 @@
           </div>
           <nav class="header-nav">
             <ul class="nav-list">
-              <li class="nav-list__item active"> <a class="js-scroll-t" href="#page1">Home</a> </li>
-              <li class="nav-list__item"> <a class="js-scroll-t" href="#page3">About</a> </li>
-              <li class="nav-list__item"> <a class="js-scroll-t" href="#page4">work</a> </li>
-              <li class="nav-list__item"> <a class="js-scroll-t" href="#page5">contact</a> </li>
+              <li class="nav-list__item active"> <a class="js-scroll-t" href="#home">Home</a> </li>
+              <li class="nav-list__item"> <a class="js-scroll-t" href="#about">About</a> </li>
+              <li class="nav-list__item"> <a class="js-scroll-t" href="#work">work</a> </li>
+              <li class="nav-list__item"> <a class="js-scroll-t" href="#contact">contact</a> </li>
             </ul>
           </nav>
         </div>
@@ -27,12 +27,12 @@
           <h1 class="header-greeting__text">
             Hi there. Welcome on our game.<br>I guess you are have fun. Good luck.
           </h1>
-          <div class="button --button-orange"><a href="#page2">Learn more</a></div>
+          <div class="button --button-orange"><a href="javascript:void(0);">Learn more</a></div>
         </div>
       </div>
     </header>
-    <section class="section --developing" data-anchor="page2">
-      <div class="container flex-wrap">
+    <section class="section --developing" data-anchor="developing">
+      <div class="container">
         <div class="section-header">
           <h2 class="section-header__title">How we did it</h2>
           <p class="section-header__descr">We had to leave all our business and put it out of our minds.<br>We tried and still did it. Our product is ready for your use.</p>
@@ -69,27 +69,13 @@
         </div>
       </div>
     </section>
-    <section id="about" class="section --about" data-anchor="page3">
-      <div class="container flex-wrap">
+    <section id="about" class="section --about" data-anchor="about">
+      <div class="container">
         <div class="section-header">
           <h2 class="section-header__title --dark">Meet our beautiful team</h2>
           <p class="section-header__descr --dark">We are a small team of FronEnd developers, who help brands with big ideas.</p>
         </div>
         <div class="about-list">
-          <div class="about-item">
-            <div class="about-item__img">
-              <img src="" alt="">
-            </div>
-            <div class="about-item__title --dark">Anna Ivanova</div>
-            <div class="about-item__sub-title --blue">Front End Developer</div>
-            <div class="about-item__descr">We hope you will be satisfied<br>from our product. Thank you<br>for choosing us!</div>
-            <div class="about-social-list">
-              <div class="about-social-item"><a href="#"><i class="fa fa-git-square" aria-hidden="true"></i></a></div>
-              <div class="about-social-item"><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></div>
-              <div class="about-social-item"><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></div>
-              <div class="about-social-item"><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></div>
-            </div>
-          </div>
           <div class="about-item">
             <div class="about-item__img">
               <img src="/img/content/team/SMatievsky.jpg" alt="">
@@ -106,7 +92,7 @@
           </div>
           <div class="about-item">
             <div class="about-item__img">
-              <img src="" alt="">
+              <img src="/img/content/team/SMatievsky.jpg" alt="">
             </div>
             <div class="about-item__title --dark">Ilya Staver</div>
             <div class="about-item__sub-title --blue">Front End Developer</div>
@@ -121,8 +107,8 @@
         </div>
       </div>
     </section>
-    <section id="work" class="section --work" data-anchor="page4">
-      <div class="container flex-wrap">
+    <section id="work" class="section --work" data-anchor="work">
+      <div class="container">
         <div class="section-header">
           <h2 class="section-header__title --dark --light-line">Our Game</h2>
           <p class="section-header__descr --dark">Here are screenshots of the game. We tried to take into account the wishes of our players.</p>
@@ -140,38 +126,16 @@
             <div class="button --button-green"><a href="javascript:void(0);">Start game now!</a></div>
       </div>
     </section>
-    <footer id="contact" class="section footer" data-anchor="page5">
-      <div class="container flex-wrap">
-        <div class="section-header">
-          <h2 class="section-header__title">Get in  touch</h2>
-          <p class="section-header__descr">Contact us through any network.</p>
-        </div>
-        <div class="button --button-blue"><a href="javascript:void(0);">Start game now!</a></div>
+    <footer id="contact" class="section footer" data-anchor="contact">
+      <div class="section-header">
+        <h2 class="section-header__title">Get in  touch</h2>
+        <p class="section-header__descr">Contact us through any network.</p>
+      </div>
+      <div class="button --button-blue"><a href="javascript:void(0);">Start game now!</a></div>
+      <div class="footer-social">
 
-
-        </div>
-        <div class="footer-social">
       </div>
     </footer>
   </div>
-  <!-- <div id="fp-nav" class="right" style="margin-top: -43.5px;">
-    <ul>
-      <li>
-        <a href="#page1" class="active"><span></span></a>
-        <div class="fp-tooltip right">fullPage</li></div>
-      <li>
-        <a href="#page2" class=""><span></span></a>
-        <div class="fp-tooltip right">Open</div>
-      </li>
-      <li>
-        <a href="#page3" class=""><span></span></a>
-        <div class="fp-tooltip right">Easy</div>
-      </li>
-        <li>
-          <a href="#page4" class=""><span></span></a>
-          <div class="fp-tooltip right">Touch</div>
-        </li>
-      </ul>
-    </div> -->
 </body>
 </html>

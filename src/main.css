@@ -111,6 +111,13 @@ body{
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
+.flex-wrap{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 header{
   background-color: rgb(135, 80, 156);
@@ -201,12 +208,6 @@ h1.header-greeting__text{
 }
 section.section{
   min-height: 100vh;
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  justify-content: center;
-  -ms-align-items: center;
-  align-items: center;
 }
 section.section.--developing{
   background-color: rgb(23, 194, 164);
@@ -417,5 +418,5 @@ footer{
   width: 100%;
   height: 70px;
   position: absolute;
-  bottom: -70px;
+  bottom: 0px;
 }
